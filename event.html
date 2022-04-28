@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment ~ Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: gray; margin:0;">
+    <div class="container">
+        <div class="inner_container">
+            <div class="temporal_cont">
+                <div class="point top_point"></div>
+            </div>
+            <div class="innermost_container">
+                <div class="point point_2"></div>
+                <div class="point point_2 point_3_send_afar"></div>
+            </div>
+        </div>
+        <div class="vertical_container">
+            <button class="btn">ON/OFF</button>
+            <div class="indicator"></div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        document.querySelector(".btn").addEventListener("click", function(){
+            if (document.querySelector(".indicator").style.backgroundColor != "red"){
+                document.querySelector(".indicator").style.backgroundColor = "red";
+            } else {
+                document.querySelector(".indicator").style.backgroundColor = "rgba(52, 52, 201, 0.75)";
+            } 
+        });
+    });
+</script>
+</html>
